@@ -15,5 +15,5 @@ Thumbs.db
 # Logs
 npm-debug.log
 
-# Locks
-package-lock.json
+# Build
+/dist
