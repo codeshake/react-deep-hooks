@@ -17,8 +17,8 @@ All passing arguments as in native [`React Hooks`](https://reactjs.org/docs/hook
 
 ### Hooks list:
 
-useDeepEffect => useEffect
-useDeepMemo => useMemo
-useDeepCallback => useCallback
-useDeepImperativeHandle => useImperativeHandle
-useDeepLayoutEffect => useLayoutEffect
+- useDeepEffect => useEffect
+- useDeepMemo => useMemo
+- useDeepCallback => useCallback
+- useDeepImperativeHandle => useImperativeHandle
+- useDeepLayoutEffect => useLayoutEffect
