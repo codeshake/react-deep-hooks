@@ -1,0 +1,21 @@
+{
+  "name": "react-deep-hooks",
+  "version": "1.0.0",
+  "description": "React hooks for non-primitive dependencies",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codeshake/react-deep-hooks.git"
+  },
+  "keywords": [
+    "react",
+    "hooks"
+  ],
+  "author": "Codeshake",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codeshake/react-deep-hooks/issues"
+  },
+  "homepage": "https://github.com/codeshake/react-deep-hooks#readme"
+}
