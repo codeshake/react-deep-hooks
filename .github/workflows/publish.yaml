@@ -15,12 +15,12 @@ jobs:
         with:
           node-version: 18
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
       - run: |
+          npm ci
           git config user.name "Sergei Lutov"
           git config user.email "doublemakers@gmail.com"
           npm version ${{ github.event.inputs.version }}
-      - run: npm run build
-      - run: npm publish
+          npm run build
+          npm publish
     env:
       NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
