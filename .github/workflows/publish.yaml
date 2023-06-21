@@ -16,7 +16,10 @@ jobs:
           node-version: 18
           registry-url: https://registry.npmjs.org/
       - run: npm ci
-      - run: npm version ${{ github.event.inputs.version }}
+      - run: |
+          git config --global user.name "Sergei Lutov"
+          git config --global user.email "doublemakers@gmail.com"
+          npm version ${{ github.event.inputs.version }}
       - run: npm run build
       - run: npm publish
     env:
