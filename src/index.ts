@@ -14,12 +14,12 @@ import {
     isEqual,
 } from 'lodash'
 
-function useDeepCompare(value: DependencyList): DependencyList {
-    const prevValue = useRef<DependencyList>(null)
+function useDeepCompare(deps: DependencyList | undefined): DependencyList {
+    const prevDeps = useRef<DependencyList>()
     const signalRef = useRef<boolean>(false)
 
-    if (!isEqual(value, prevValue.current)) {
-        prevValue.current = cloneDeep(value)
+    if (!isEqual(deps, prevDeps.current)) {
+        prevDeps.current = cloneDeep(deps)
         signalRef.current = !signalRef.current
     }
 
